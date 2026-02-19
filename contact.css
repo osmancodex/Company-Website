@@ -170,9 +170,18 @@ body {
 
 /* ========== Large Tablets (768px – 1024px) ========== */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .nav ul {
+  /* .nav ul {
     gap: 1rem;
-    /* tighter spacing */
+  } */
+
+  .nav {
+    display: none;
+    /* hide nav links */
+  }
+
+  .menu-toggle {
+    display: block;
+    /* show hamburger */
   }
 
   .btn-primary {
@@ -180,10 +189,7 @@ body {
     padding: 0.5rem 1rem;
   }
 
-  .menu-toggle {
-    display: none;
-    /* hide hamburger on larger tablets */
-  }
+  
 
   .logo img {
     height: 40px;
@@ -207,7 +213,7 @@ body {
   padding: 12px 24px;
   background-color: #0e59ae;
   font-family: Outfit;
-  font-weight: 700;
+  font-weight: 500;
   font-style: Bold;
   font-size: 18px;
   border: none;
@@ -217,6 +223,11 @@ body {
   width: auto;
   align-self: flex-start;
 }
+.primary-btn a{
+  color: white;
+  text-decoration: none;
+}
+
 
 .secondry-btn {
   background-color: #fdfeff;
@@ -1913,6 +1924,10 @@ input[type="checkbox"]:checked+label::before {
     justify-content: space-between;
   }
 
+  /* .footer-links{
+    max-width: 70%;
+  } */
+
   .form-inputs {
     flex-direction: row;
     gap: 1rem;
@@ -1938,7 +1953,11 @@ input[type="checkbox"]:checked+label::before {
   }
 
   .footer-links {
-    width: 45%;
+    width: 30%;
+  }
+
+  .footer-links-1{
+    margin-left: 110px;
   }
 
   .footer-bottom {

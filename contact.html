@@ -17,26 +17,28 @@
   <header id="main-header">
     <div class="container">
       <div class="header-inner">
+
         <!-- Logo -->
         <div class="logo">
-          <img src="images/logo.webp" alt="Sysinn Logo" />
+          <img src="images/logo.webp" alt="Sysinn Logo">
         </div>
 
         <!-- Navigation -->
         <nav class="nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Local SEO</a></li>
+            <li><a href="#">Industries</a></li>
+            <li><a href="#">Platform</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Our Portfolio</a></li>
+            <li><a href="#">About Us</a></li>
           </ul>
         </nav>
 
         <!-- CTA + Menu Button -->
         <div class="header-actions">
-          <button class="primary-btn">Get a Quote</button>
+          <button class="primary-btn"><a href="contact.html">Get a Free Quote</a></button>
           <button id="menu-btn" class="menu-toggle">
             <span id="menu-icon">☰</span>
             <span id="close-icon" class="hidden">✖</span>
@@ -48,12 +50,13 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Local SEO</a></li>
+        <li><a href="#">Industries</a></li>
+        <li><a href="#">Platform</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Our Portfolio</a></li>
+        <li><a href="#">About Us</a></li>
       </ul>
     </div>
   </header>
@@ -583,15 +586,15 @@
     <div class="footer-bottom">
       <div class="footer-bottom-content">
         <div class="footer-contact-icon">
-          <img src="images/footer-contect-icons (2).svg" alt="">
+          <img src="images/footer-contect-icons (2).svg" width="20px" alt="">
           <h4><span>Address:</span> 20700 S Western Ave Torrance, CA 90501 U.S.A</h4>
         </div>
         <div class="footer-contact-icon">
-          <img src="images/footer-contect-icons (3).svg" alt="">
+          <img src="images/footer-contect-icons (3).svg" width="20px" alt="">
           <h4><span>Phone:</span> (626)-897-8102</h4>
         </div>
         <div class="footer-contact-icon">
-          <img src="images/footer-contect-icons (1).svg" alt="">
+          <img src="images/footer-contect-icons (1).svg" width="20px" alt="">
           <h4><span>Email:</span> support@sysinn.com</h4>
         </div>
       </div>
@@ -652,6 +655,23 @@
       });
     });
 
+
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+    const closeIcon = document.getElementById("close-icon");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+
+      if (mobileMenu.classList.contains("open")) {
+        menuIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      } else {
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      }
+    });
 
   </script>
 </body>
