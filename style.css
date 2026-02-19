@@ -16,7 +16,6 @@ body {
 
 #main-header {
   background: #fff;
-  border-bottom: 1px solid #e5e7eb;
   font-family: "Inter", sans-serif;
   position: relative;
   z-index: 50;
@@ -294,7 +293,7 @@ body {
   border-radius: 8px;
   padding: 12px 24px;
   font-family: Outfit;
-  font-weight: 700;
+  font-weight: 500;
   font-style: Bold;
   font-size: 18px;
   line-height: 24.3px;

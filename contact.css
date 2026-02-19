@@ -9,7 +9,6 @@ body {
 
 #main-header {
   background: #fff;
-  border-bottom: 1px solid #e5e7eb;
   font-family: "Inter", sans-serif;
   position: relative;
   z-index: 50;
@@ -189,7 +188,7 @@ body {
     padding: 0.5rem 1rem;
   }
 
-  
+
 
   .logo img {
     height: 40px;
@@ -223,7 +222,8 @@ body {
   width: auto;
   align-self: flex-start;
 }
-.primary-btn a{
+
+.primary-btn a {
   color: white;
   text-decoration: none;
 }
@@ -1956,7 +1956,7 @@ input[type="checkbox"]:checked+label::before {
     width: 30%;
   }
 
-  .footer-links-1{
+  .footer-links-1 {
     margin-left: 110px;
   }
 
